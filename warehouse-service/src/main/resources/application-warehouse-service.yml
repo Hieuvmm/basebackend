@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: ${LED_WH_SERVICE_NAME:warehouse-service}
+  datasource:
+    url: ${LED_WH_DB_URL:jdbc:postgresql://103.75.76.68:5432/db-cuongphong-warehouse-mngt}
+    username: ${LED_WH_DB_USERNAME:vworks}
+    password: ${LED_WH_DB_PASSWORD:Vworks123456aA@}
+  jpa:
+    hibernate:
+      ddl-auto: none
+    show-sql: false
+  #server:
+  #  port: 8082
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 10MB
+      max-request-size: 100MB

@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: ${LED_AS_SERVICE_NAME:admin-service}
+  datasource:
+    url: ${LED_AS_DB_URL:jdbc:postgresql://103.75.76.68:5432/db-cuongphong-warehouse-mngt}
+    username: ${LED_AS_DB_USERNAME:vworks}
+    password: ${LED_AS_DB_PASSWORD:Vworks123456aA@}
+  jpa:
+    show-sql: false
